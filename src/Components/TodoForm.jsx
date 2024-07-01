@@ -25,7 +25,7 @@ const TodoForm = () => {
     return (
 
         <form className="form" onSubmit={(e)=> {e.preventDefault()}} >
-            <input placeholder='Write todo ...' className='inputTodo' type="text" value={task} onChange={(e) => {
+            <input placeholder='Write to do ...' className='inputTodo' type="text" value={task} onChange={(e) => {
                 setTask(e.target.value);
             }} />
             <button onClick={add} className='addTodo' >Add</button>

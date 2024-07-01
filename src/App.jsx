@@ -21,9 +21,13 @@ function App() {
     })
   }
   const deleteTodo = (id) => {
-    setTodos((prev) => {
-      return prev.filter((element) => { return element.id !== id })
-    })
+    if (confirm("Are you sure to delete this task?.")) {
+      setTodos((prev) => {
+        return prev.filter((element) => { return element.id !== id })
+      })
+
+
+    }
   }
   const toggleTodo = (id) => {
 
