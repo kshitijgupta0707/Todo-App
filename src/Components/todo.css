@@ -1,0 +1,93 @@
+* {
+  animation: all 5s;
+}
+
+.form {
+  margin: 1rem 0;
+}
+.inputTodo {
+  width: 70%;
+  /* height: 2rem; */
+  margin-right: 2%;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.addTodo {
+  /* width: 16%; */
+  font-size: 1rem;
+  padding: 10px 30px;
+  background-color: rgb(10, 182, 10);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.addTodo:hover{
+  background-color: rgba(10, 182, 10, 0.649);
+
+}
+
+.deleteTodo{
+  background-color: rgb(229, 57, 57);
+}
+.deleteTodo:hover{
+  background-color: rgba(229, 57, 57, 0.67);
+}
+.todoList {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.505);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  animation: background-color 5s;
+  padding: 0.5rem;
+}
+.todoList.completed{
+  text-decoration: line-through;
+  background-color: rgba(17, 241, 17, 0.771);
+}
+.completed {
+  .delete {
+    color: rgb(255, 0, 0);
+  }
+}
+.todo-item {
+  width: 86%;
+  /* min-height:40px; */
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  border: none;
+ 
+  /* background-color: inherit;/ */
+  background-color: transparent;
+  word-wrap: break-word;
+}
+.todo-item:focus{
+   outline: 1px solid rgb(13, 13, 13);
+}
+
+.toggle {
+  height: 23px;
+  width: 23px;
+  margin: 0rem 0.4rem;
+ 
+}
+.edit,
+.save,
+.delete {
+  font-size: 2rem;
+  margin: 0rem 0.2rem;
+}
+.edit {
+  color: rgb(39, 46, 119);
+}
+.delete {
+  color: rgba(221, 255, 0, 0.638);
+}
